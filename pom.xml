@@ -6,7 +6,7 @@
 	<groupId>com.cybrilla</groupId>
 	<artifactId>cybrilla</artifactId>
 	<version>0.0.1-SNAPSHOT</version>
-	<packaging>jar</packaging>
+	<packaging>war</packaging>
 
 	<name>cybrilla</name>
 	<description>Demo project for Spring Boot</description>
@@ -57,6 +57,10 @@
            <artifactId>jjwt</artifactId>
            <version>0.7.0</version>
         </dependency>
+        <dependency>
+			<groupId>org.springframework.boot</groupId>
+			<artifactId>spring-boot-starter-thymeleaf</artifactId>
+		</dependency>
 		<dependency>
 			<groupId>org.springframework.boot</groupId>
 			<artifactId>spring-boot-starter-test</artifactId>
