@@ -20,6 +20,8 @@ import com.cybrilla.cybrilla.repository.ClassRepository;
 import com.cybrilla.cybrilla.repository.StudentRepository;
 import com.fasterxml.jackson.databind.ObjectMapper;
 
+import ch.qos.logback.classic.Logger;
+
 @RestController
 @RequestMapping("/api")
 public class StudentController {
@@ -32,6 +34,7 @@ public class StudentController {
 	
 	@GetMapping("/students")
 	public Map<String,Object> getStudent() {
+		
 		Map<String,Object> response = new HashMap<String,Object>(); 
 		try {
 			List<Student> students = studentRepository.findAll();
